@@ -1,6 +1,6 @@
 # Deadlock and Optimizations
 
-##Freeze Deadlock
+## Freeze Deadlock
 
 ### Location and helper functions
 
@@ -21,7 +21,7 @@ mentioned below rather than corner_check to check for deadlock.
 * deadlock_up    : to find freeze deadlock if we are moving up
 * deadlock_down  : to find freeze deadlock if we are moving down
 
-###Explaination 
+### Explaination 
 (this is not a perfect way to do it, but it works for most cases)
 
 Lets say we are pushing this blue box to right 
@@ -49,7 +49,7 @@ This algorithm could be improved if we recursively find obstruction points
 until we hit a wall or empty spot. Currently, for the simplicity sake the 
 algorithm only runs two level deep. This is enough to clear given test cases. 
 
-#Other modifications (memory management)
+# Other modifications (memory management)
 * free_map function was created in ai.c between lines 145 to 153 to make it 
 easier to free a map array. 
 
